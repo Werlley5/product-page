@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+    --color-1: hsl(176, 50%, 47%);
+    --color-2: hsl(176, 72%, 28%);
+    --color-3: hsl(0, 0%, 0%);
+    --color-4: hsl(0, 0%, 48%);
+    --color-5: #fff;
+    --color-6: hsl(0, 5%, 89%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner';
+}
+
+header {
+    min-height: 500px;
+    background-image: url('../img/image-hero-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-main {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--color-5);
+    font-size: 12px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.mobile-cont {
+    display: none;
+}
+
+/*sections*/
+
+.card-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    background-color: var(--color-5);
+    position: relative;
+    bottom: 90px;
+}
+
+.logo-m {
+    position: relative;
+    bottom: 29px;
+}
+
+.card p {
+    color: var(--color-4);
+    margin-top: 20px;
+}
+
+.card-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 30px;
+}
+
+#btn-1 {
+    width: 180px;
+    height: 50px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#btn-1:hover {
+    background-color: var(--color-2);
+}
+
+#btn-2 {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background-color: var(--color-6);
+    color: var(--color-4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#btn-2:hover {
+    background-color: var(--color-4);
+    color: var(--color-5);
+}
+
+#btn-2 img {
+    margin-right: 10px;
+}
+
+.card-2-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card-n {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--color-5);
+    position: relative;
+    bottom: 60px;
+} 
+
+.numbers-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    width: calc(100% / 3);
+    padding-left: 40px;
+}
+
+.numbers:not(:last-child) {
+    border-right-width: thin;
+    border-right-style: solid;
+    border-right-color: var(--color-6);
+}
+
+.numbers p {
+    color: var(--color-4);
+    margin-top: 10px;
+}
+
+.barra {
+    width: 90%;
+    height: 10px;
+    background-color: var(--color-6);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.barra-color {
+    width: 70%;
+    height: 10px;
+    background-color: var(--color-1);
+    border-radius: 10px;
+}
+
+.product-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-card {
+    width: 70%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+.product-text p {
+    color: var(--color-4);
+    font-size: 12px;
+}
+
+.product-text p:not(:last-child) {
+    margin: 30px 0;
+}
+
+.sub-card {
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price h2 {
+    font-size: 18px;
+}
+
+.price h4 {
+    color: var(--color-1);
+    font-size: 14px;
+}
+
+.sub-card-text p {
+    color: var(--color-4);
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.sub-card-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-card-btn button {
+    width: 180px;
+    height: 50px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.sub-card-btn button:hover {
+    background-color: var(--color-2);
+}
+
+.sub-card-btn h2 {
+    font-size: 28px;
+}
+
+.left {
+    color: var(--color-4);
+    font-size: 12px;
+    position: relative;
+    bottom: 6px;
+}
+
+.sub-card-dark {
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.price-d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-d h2 {
+    font-size: 18px;
+    color: var(--color-4);
+}
+
+.price-d h4 {
+    color: var(--color-4);
+    font-size: 14px;
+}
+
+.sub-card-text-d p {
+    color: var(--color-4);
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.sub-card-btn-d {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-card-btn-d h2 {
+    font-size: 28px;
+    color: var(--color-4);
+}
+
+.sub-card-btn-d button {
+    width: 180px;
+    height: 50px;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.default-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.default-card {
+    width: 90%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    background-color: var(--color-5);
+}
+
+.default-card h2 {
+    padding-top: 40px;
+}
+
+.paragraph {
+    color: var(--color-4);
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.close {
+   position: absolute;
+   right: 20px;
+}
+
+.close button {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.726);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.default-sub {
+    width: 100%;
+    border: 1px solid var(--color-4);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.sub-btn {
+    margin-right: 20px;
+}
+
+.sub-btn button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--color-4);
+    cursor: pointer;
+    background-color: var(--color-5);
+}
+
+.sub-text h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.span-color {
+    color: var(--color-1);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.sub-span {
+    color: var(--color-4);
+    margin-left: 5px;
+}
+
+.sub-text p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.default-sub p {
+    color: var(--color-4);
+}
+
+.sub-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active-card {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-6);
+}
+
+.active-card h5 {
+    color: var(--color-4);
+    font-weight: normal;
+}
+
+.active-btn button {
+    width: 80px;
+    height: 40px;
+    background-color: var(--color-5);
+    border: 1px solid var(--color-4);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.active-btn button:hover {
+    border: 1px solid var(--color-1);
+}
+
+#continue {
+    width: 90px;
+    height: 40px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+#continue:hover {
+    background-color: var(--color-2);
+}
+
+.sub-text-d h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--color-4);
+}
+
+.sub-text-d h6 {
+    color: var(--color-4);
+}
+
+.span-color-d {
+    color: var(--color-4);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.active-btn-d button {
+    width: 80px;
+    height: 40px;
+    background-color: var(--color-5);
+    border: 1px solid var(--color-4);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#continue-d {
+    width: 90px;
+    height: 40px;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.default {
+    display: none;
+    position: absolute;
+    top: 50%;
+}
+
+.tanks {
+    display: none;
+    position: absolute;
+    top: 60%;
+}
+
+.tanks-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.tenks-card {
+    width: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    background-color: var(--color-5);
+    text-align: center;
+}
+
+.tenks-card img {
+    margin-bottom: 20px;
+}
+
+.tenks-card p {
+    color: var(--color-4);
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.tenks-card button {
+    width: 95px;
+    height: 45px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tenks-card button:hover {
+    background-color: var(--color-2);
+}
+
+
+
+/*classes js*/
+.open {
+    display: flex;
+}
+
+.show {
+    display: block;
+}
+
+.click-d {
+    display: block;
+}
+
+.click-t {
+    display: block;
+}
+
+/*-------------------------------*/
+
+/*------------------------------------*/
+
+@media(max-width: 768px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .card-btn {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-n {
+        width: 90%;
+    }
+
+    .numbers-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .numbers {
+        width: 40%;
+        padding: 20px 0;
+    }
+
+    .numbers:not(:last-child) {
+      border: none;
+    }
+
+    .numbers:not(:last-child) {
+        border-bottom-width: thin;
+        border-bottom-style: solid;
+        border-bottom-color: var(--color-6);
+    }
+
+    .numbers p {
+        font-size: 12px;
+    }
+
+    .main-card {
+        width: 90%;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price h2 {
+        margin-bottom: 10px;
+    }
+
+    .sub-card-btn {
+        flex-direction: column;
+    }
+
+    .sub-card-btn button{
+        margin-top: 20px;
+    }
+
+    .price-d {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-d h2 {
+        margin-bottom: 10px;
+    }
+
+    .sub-card-btn-d {
+        flex-direction: column;
+    }
+
+    .sub-card-btn-d button {
+        margin-top: 20px;
+    }
+
+    .default-card {
+        width: 90%;
+    }
+
+    .default-sub {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .sub-align {
+        flex-direction: column;
+    }
+
+    .sub-align h6 {
+        margin-bottom: 10px;
+    }
+
+    .sub-btn {
+        margin: 0 0 10px 0;
+    }
+
+    .active-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .active-btn-d {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .tenks-card {
+        width: 90%;
+    }
+
+}
